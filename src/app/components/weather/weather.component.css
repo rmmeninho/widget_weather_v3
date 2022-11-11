@@ -1,0 +1,160 @@
+
+.container{
+  position: relative;
+}
+
+.city{
+  width: 60vh;
+  height: 5vh;
+  background-color:rgb(233, 233, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  font-size: 2vh;
+  margin-left: 3%;
+}
+
+.date_container{
+  width: 60vh;
+  height: 5vh;
+  background-color: rgb(215, 215, 255);
+  display: flex;
+  align-items: center;
+}
+
+
+#hour{
+  margin-left: 20%;
+  font-size: 3.5vh;
+}
+
+.weather_container{
+  width: 60vh;
+  height: 30vh;
+  background-color: rgb(192, 192, 248);
+  display: flex;
+}
+
+.temperature_container{
+  width: 30vh;
+  height: 30vh;
+  position: relative;
+}
+
+#temperature{
+  position: absolute;
+  font-size: 9vh;
+  top: -20%;
+}
+
+#temperature_M{
+  position: absolute;
+  top: 55%
+}
+
+#temperature_m{
+  position: absolute;
+  top: 65%
+}
+
+#temperature_p{
+  position: absolute;
+  top: 75%
+}
+
+
+.image_container{
+  width: 30vh;
+  height: 30vh;
+  position: relative;
+}
+
+#weather_image{
+  width: 25vh;
+  height: 25vh;
+}
+
+#description_weather{
+  position: absolute;
+  top: 75%;
+  left: 15%;
+}
+
+.forecast_container{
+  display: flex;
+  width: 60vh;
+  height: 25vh;
+  text-align: center;
+  background-color: rgb(148, 148, 212);
+}
+
+.tomorrow{
+  width: 10vh;
+  height: 10vh;
+
+}
+
+#mini_weather_image{
+  width: 10vh;
+  height: 10vh;
+}
+
+.tomorrow p{
+  font-size: 1.2vh;
+}
+
+.tomorrow p span{
+  display: block;
+  font-size: 2vh;
+}
+
+.forecast_precipitation{
+  width: 60vh;
+  height: 6vh;
+  display: flex;
+  background-color: rgb(117, 117, 153);
+}
+
+#precipitation1{
+  width: 35vh;
+  display: flex;
+  align-items: center;
+}
+
+.forecast_precipitation p{
+  font-size: 1.3vh;
+}
+
+.forecast_precipitation #day{
+  font-size: 2vh;
+  margin-left: 8%;
+}
+
+#precipitation2{
+  width: 6vh;
+  height: 6vh;
+  margin-right: 8%;
+}
+
+.forecast_precipitation #mini_weather_image{
+  width: 6vh;
+  height: 6vh;
+}
+
+#precipitation3{
+  width: 19vh;
+  display: block;
+}
+
+.forecast_precipitation #day_p{
+  font-size: 1.5vh;
+  margin-top: -5%;
+}
+
+.forecast_precipitation #description_weather_p{
+  font-size: 1.5vh;
+  margin-top: 3%;
+}

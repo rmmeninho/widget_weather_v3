@@ -1,0 +1,73 @@
+
+<div class="container">
+  <div class="city">
+    <p id="city">{{this.city}}</p>
+  </div>
+  <div class="date_container">
+    <p id="date">{{this.today | date: 'EEEE, MMMM d, y'}}</p>
+    <p id="hour">{{this.today | date:'HH:mm'}}</p>
+  </div>
+  <div class="weather_container">
+    <div class="temperature_container">
+      <p id="temperature">{{this.listDataToday['temp']}}&#176;</p>
+      <p id="temperature_M">max: {{this.listDataToday['max_temp']}}&#176;</p>
+      <p id="temperature_m">min: {{this.listDataToday['min_temp']}}&#176;</p>
+      <p id="temperature_p">P.precip: {{this.listDataToday['pop']}}%</p>
+    </div>
+    <div class="image_container">
+      <img id="weather_image" [src]="'../../assets/icons/'+this.listDataToday['weather']['icon']+'.png'">
+      <p id="description_weather">{{this.listDataToday['weather']['description']}}</p>
+    </div>
+  </div>
+  <div class="forecast_container">
+    <div class="tomorrow">
+      <p id="day">{{this.listForecast[1]['datetime'] | date:'EE'}}</p>
+      <img id="mini_weather_image" [src]="'../../assets/icons/'+this.listForecast[1]['weather']['icon']+'.png'">
+      <p id="day_temp">{{this.listForecast[1]['max_temp']}}&#176;/{{this.listForecast[1]['min_temp']}}&#176;</p>
+      <p id="day_p">P.precip: <span>{{this.listForecast[1]['pop']}}%</span></p>
+    </div>
+    <div class="tomorrow">
+      <p id="day">{{this.listForecast[2]['datetime'] | date:'EE'}}</p>
+      <img id="mini_weather_image" [src]="'../../assets/icons/'+this.listForecast[2]['weather']['icon']+'.png'">
+      <p id="day_temp">{{this.listForecast[2]['max_temp']}}&#176;/{{this.listForecast[2]['min_temp']}}&#176;</p>
+      <p id="day_p">P.precip: <span>{{this.listForecast[2]['pop']}}%</span></p>
+    </div>
+    <div class="tomorrow">
+      <p id="day">{{this.listForecast[3]['datetime'] | date:'EE'}}</p>
+      <img id="mini_weather_image" [src]="'../../assets/icons/'+this.listForecast[3]['weather']['icon']+'.png'">
+      <p id="day_temp">{{this.listForecast[3]['max_temp']}}&#176;/{{this.listForecast[3]['min_temp']}}&#176;</p>
+      <p id="day_p">P.precip: <span>{{this.listForecast[3]['pop']}}%</span></p>
+    </div>
+    <div class="tomorrow">
+      <p id="day">{{this.listForecast[4]['datetime'] | date:'EE'}}</p>
+      <img id="mini_weather_image" [src]="'../../assets/icons/'+this.listForecast[4]['weather']['icon']+'.png'">
+      <p id="day_temp">{{this.listForecast[4]['max_temp']}}&#176;/{{this.listForecast[4]['min_temp']}}&#176;</p>
+      <p id="day_p">P.precip: <span>{{this.listForecast[4]['pop']}}%</span></p>
+    </div>
+    <div class="tomorrow">
+      <p id="day">{{this.listForecast[5]['datetime'] | date:'EE'}}</p>
+      <img id="mini_weather_image" [src]="'../../assets/icons/'+this.listForecast[5]['weather']['icon']+'.png'">
+      <p id="day_temp">{{this.listForecast[5]['max_temp']}}&#176;/{{this.listForecast[4]['min_temp']}}&#176;</p>
+      <p id="day_p">P.precip: <span>{{this.listForecast[5]['pop']}}%</span></p>
+    </div>
+    <div class="tomorrow">
+      <p id="day">{{this.listForecast[6]['datetime'] | date:'EE'}}</p>
+      <img id="mini_weather_image" [src]="'../../assets/icons/'+this.listForecast[6]['weather']['icon']+'.png'">
+      <p id="day_temp">{{this.listForecast[6]['max_temp']}}&#176;/{{this.listForecast[6]['min_temp']}}&#176;</p>
+      <p id="day_p">P.precip: <span>{{this.listForecast[6]['pop']}}%</span></p>
+    </div>
+  </div>
+  <div class="forecast_precipitation">
+    <div id="precipitation1">
+      <p>NEXT PRECIPITATION: </p>
+      <p id="day">{{this.precipitation['datetime'] | date:'EEEE'}}</p>
+    </div>
+    <div id="precipitation2">
+      <img id="mini_weather_image" [src]="'../../assets/icons/'+this.precipitation['weather']['icon']+'.png'">
+    </div>
+    <div id="precipitation3">
+      <p id="description_weather_p">{{this.precipitation['weather']['description']}}</p>
+      <p id="day_p">P.precip: <span>{{this.precipitation['pop']}}%</span></p>
+    </div>
+  </div>
+</div>
